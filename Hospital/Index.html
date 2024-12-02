@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>CityCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const toggleButton = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CityCare Hospital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Your Health, Our Priority</h2>
+            <p>Providing compassionate care for every patient, every day.</p>
+            <a href="#contact" class="btn">Make an Appointment</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>CityCare Hospital has been a beacon of hope and healing for over 20 years. We specialize in providing top-notch medical services and ensuring the comfort and well-being of our patients.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>General Medicine</h3>
+                <p>Comprehensive healthcare for all ages.</p>
+            </div>
+            <div class="service-item">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency services with state-of-the-art facilities.</p>
+            </div>
+            <div class="service-item">
+                <h3>Specialized Treatments</h3>
+                <p>Expert care in cardiology, orthopedics, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2>Our Doctors</h2>
+            <div class="doctor-item">
+                <h3>Dr. John Smith</h3>
+                <p>Cardiologist with 15 years of experience.</p>
+            </div>
+            <div class="doctor-item">
+                <h3>Dr. Sarah Lee</h3>
+                <p>Orthopedic surgeon specializing in sports injuries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CityCare Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
