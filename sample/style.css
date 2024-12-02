@@ -1,0 +1,13 @@
+#container{
+    background-color:red;
+    height:250px;
+    padding:20px;
+    display:flex;
+}
+
+#div{
+    background-color: aqua;
+    height:250px;
+    width:2000px;
+    margin:5px;
+}
